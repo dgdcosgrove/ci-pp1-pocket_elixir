@@ -1,31 +1,77 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&family=Oleo+Script+Swash+Caps:wght@700&display=swap');
+
+/* removes all margin, padding and borders */
 * {
     margin: 0;
     padding: 0;
     border: none;
 }
 
+/* styling for body */
 body {
+    font-family: "Montserrat";
+    color: #ffd700;
     background-color: #000;
-    color: #FFF;
 }
 
+/* logo styling */
 #logo {
     float: left;
+    font-family: "Oleo Script Swash Caps", cursive;
+    font-size:300%;
+    color: #ffd700;
+    letter-spacing: 3px;
+    margin-left: 25px;
 }
 
+/* menu styling */
 #menu {
     float: right;
+    font-size: 115%;
+    letter-spacing: 3px;
+}
+
+#menu, #logo {
+    line-height: 80px;
 }
 
 #menu li {
-    display: inline-block;
+    display: inline;
+    list-style-type: none;
+    margin-right: 25px;
 }
 
-a {
+#menu a {
     text-decoration: none;
     color: inherit;
 }
 
+#menu a:hover {
+    border-bottom: 1px solid #f88657;
+}
+
 .active {
-    border: 1px solid #FFF;
+    border-bottom: 1px solid #f88657;
+}
+
+/* footer styling */
+footer {
+    height: 150px;
+    clear: both;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons > li {
+    	display: inline;
+}
+
+.social-icons i {
+    font-size: 150%;
+    margin: 1%;
+    padding: 5%;
+    color: #ffd700;
 }
