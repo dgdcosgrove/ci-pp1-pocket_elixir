@@ -10,7 +10,7 @@
 
 /* styling for body */
 body {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     color: #ffd700;
     background-color: #000;
 }
@@ -54,6 +54,17 @@ body {
 
 .active {
     border-bottom: 1px solid #f88657;
+}
+
+#tag-line {
+    clear: both;
+    /* font-family: "Oleo Script Swash Caps", cursive; */
+    font-size: 95%;
+    font-weight: 300;
+    color: #f88657;
+    margin-left: 50px;
+    position: absolute;
+    top: 60px;
 }
 
 /* hero image and text*/
