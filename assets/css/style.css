@@ -1,5 +1,5 @@
 /* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&family=Oleo+Script+Swash+Caps:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&family=Oleo+Script+Swash+Caps&display=swap');
 
 /* removes all margin, padding and borders */
 * {
@@ -19,7 +19,8 @@ body {
 #logo {
     float: left;
     font-family: "Oleo Script Swash Caps", cursive;
-    font-size:300%;
+    font-size: 300%;
+    font-weight: 400;
     color: #ffd700;
     letter-spacing: 3px;
     margin-left: 25px;
