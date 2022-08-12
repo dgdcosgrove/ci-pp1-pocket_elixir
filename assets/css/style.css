@@ -55,6 +55,15 @@ body {
     border-bottom: 1px solid #f88657;
 }
 
+/* hero image and text*/
+#hero-image {
+    clear: both;
+    height: 500px;
+    width: 100%;
+    background: url('../images/hero-image.jpg') no-repeat center center;
+    background-size: cover;
+}
+
 /* footer styling */
 footer {
     height: 150px;
