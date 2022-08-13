@@ -79,6 +79,12 @@ body {
 footer {
     height: 150px;
     clear: both;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    height: 75px;
 }
 
 .social-icons {
@@ -92,6 +98,6 @@ footer {
 .social-icons i {
     font-size: 150%;
     margin: 1%;
-    padding: 5%;
+    padding: 1% 5%;
     color: #ffd700;
 }
