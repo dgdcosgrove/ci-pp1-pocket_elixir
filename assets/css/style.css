@@ -269,7 +269,7 @@ iframe {
 
 .form-section {
     clear: left;
-    background: url(../images/form-bg.jpg);
+    background: url('../images/form-bg.jpg');
     background-size: cover;
     background-position: center;
     height: 900px;
@@ -283,6 +283,7 @@ iframe {
     position: absolute;
     left: 2%;
     padding: 30px;
+    border: 1px solid #ffd700;
 }
 
 .signup-form h2 {
@@ -310,14 +311,46 @@ iframe {
     padding: 15px 32px;
     text-align: center;
     font-size: 100%;
+    font-family: inherit;
+    font-weight: 700;
     background-color: #ffd700;
     color: #f88657;
     display: block;
+    text-transform: uppercase;
 }
 
 .join-button:hover {
     background-color: #f88657;
     color: #ffd700;
+}
+
+#fof {
+    height: 900px;
+    width: 100%;
+    background: url('../images/404-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+}
+
+#thanks {
+    height: 900px;
+    background: url('../images/thanks-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-text {
+    text-align: center;
+}
+
+.img-text a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.img-text h1, .img-text p {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px 0;
 }
 
 /* footer styling */
