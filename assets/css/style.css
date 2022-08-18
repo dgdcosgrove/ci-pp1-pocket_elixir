@@ -379,68 +379,6 @@ footer {
     color: #ffd700;
 }
 
-/* For small screens sizes from 320px wide and down */
-
-@media screen and (max-width: 320px) {
-
-    #logo {
-        font-size: 250%;
-    }
-
-    #tag-line {
-        font-size: 80%;
-    }
-
-    nav {
-        text-align: center;
-    }
-
-    #menu {
-        margin: 5px auto;
-        line-height: 20px;
-        font-size: 80%;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-
-    #hero-text {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-    }
-
-    #about-us {
-        margin-bottom: 20px;
-    }
-
-    #about-us div {
-        clear: both;
-        display: block;
-        width: 85%;
-        font-size: 95%;
-    }
-
-    .form-section {
-        clear: both;
-        height: 500px;
-    }
-
-    .signup-form {
-        text-align: center;
-        width: 200px;
-        margin: 20px 20px;
-    }
-
-    .request-button {
-        display: inline-block;
-    }
-
-    #thanks {
-        clear: both;
-    }
-}
-
 @media screen and (max-width: 420px) {
     #logo {
         font-size: 275%;
@@ -501,3 +439,65 @@ footer {
         clear: both;
     }
 }
+
+/* For small screens sizes from 320px wide and down */
+@media screen and (max-width: 320px) {
+
+    #logo {
+        font-size: 250%;
+    }
+
+    #tag-line {
+        font-size: 80%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #menu {
+        margin: 5px auto;
+        line-height: 20px;
+        font-size: 80%;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #hero-text {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    #about-us {
+        margin-bottom: 20px;
+    }
+
+    #about-us div {
+        clear: both;
+        display: block;
+        width: 85%;
+        font-size: 95%;
+    }
+
+    .form-section {
+        clear: both;
+        height: 500px;
+    }
+
+    .signup-form {
+        text-align: center;
+        width: 200px;
+        margin: 20px 20px;
+    }
+
+    .request-button {
+        display: inline-block;
+    }
+
+    #thanks, #fof {
+        clear: both;
+    }
+}
+
