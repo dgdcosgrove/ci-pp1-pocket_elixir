@@ -16,6 +16,7 @@ body {
     overflow: scroll;
 }
 
+/* styling for header */
 header {
     height: 80px;
     border-bottom: 1px solid #ffd700;
@@ -62,6 +63,7 @@ header {
     border-bottom: 1px solid #f88657;
 }
 
+/* tag line styling */
 #tag-line {
     clear: both;
     font-size: 95%;
@@ -91,10 +93,8 @@ header {
     position: absolute;
     top: 100px;
     right: 40px;
-
     margin-top: 100px;
     padding: 10px 10px;
-
     border-bottom-right-radius: 25px;
     border-top-left-radius: 25px;
 }
@@ -104,6 +104,7 @@ header {
     font-weight: 300;
 }
 
+/* call to action home page */
 #launch-recipes {
     float: right;
     background-color: #ffd700;
@@ -133,8 +134,8 @@ header {
     color: #ffd700;
 }
 
+/* about us section on home page */
 #about-us {
-
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
@@ -147,17 +148,13 @@ header {
 }
 
 #about-us div {
-
     color: #ffd700;
     background-color: rgba(248, 134, 87, .6);
     width: 30%;
     height: 125px;
-    
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
-
     margin: 20px 20px 0px 20px;
-
     display: inline-block;
     text-align: center;
     box-shadow: 5px 5px;
@@ -168,20 +165,17 @@ header {
     padding: 10px 10px 0 10px;
 }
 
-.underline {
-    border-bottom: 1px solid #ffd700;
-}
-
 #about-us p {
     color: #ffd700;
     padding: 10px 10px 0 10px;
 }
 
-iframe {
-    margin: 0 auto;
-    display: block;
+/* link styling */
+.underline {
+    border-bottom: 1px solid #ffd700;
 }
 
+/* styling for recipes section on recipes page */
 #recipes {
     clear: left;
     width: 100%;
@@ -198,9 +192,9 @@ iframe {
     color: inherit;
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+/* flip card container on recipes page */
+/* code adapted from w3c "https://www.w3schools.com/howto/howto_css_flip_card.asp" */
 .flip-card {
-    /*margin: 10px 0;*/
     display: inline-block;
     background-color: transparent;
     width: 300px;
@@ -209,7 +203,7 @@ iframe {
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
-  /* This container is needed to position the front and back side */
+  /* positioning and animation for front and back side of flip cards */
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -219,7 +213,7 @@ iframe {
     transform-style: preserve-3d;
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* horizontal flip on mouse over */
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
@@ -269,6 +263,8 @@ iframe {
     padding-left: 10px;
   }
 
+/* styling for form section on request page */
+/* code adapted from love running project */
 .form-section {
     clear: left;
     background: url('../images/form-bg.jpg');
@@ -280,7 +276,7 @@ iframe {
 .signup-form {
     margin: 160px 10% 0 0;
     color: #f88657;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     max-width: 300px;
     position: absolute;
     left: 2%;
@@ -319,13 +315,16 @@ iframe {
     color: #f88657;
     display: block;
     text-transform: uppercase;
+    border: 5px solid #f88657;
 }
 
 .request-button:hover {
     background-color: #f88657;
     color: #ffd700;
+    border: 5px solid #ffd700;
 }
 
+/* styling for 404 page */
 #fof {
     height: 900px;
     width: 100%;
@@ -334,6 +333,7 @@ iframe {
     background-position: center;
 }
 
+/* styling for thank you page, visable upon form submission */
 #thanks {
     height: 900px;
     width: 100%;
@@ -358,6 +358,7 @@ iframe {
 }
 
 /* footer styling */
+/* code adapted from love running project */
 footer {
     width: 100%;
     background-color: #000;
@@ -379,89 +380,24 @@ footer {
     color: #ffd700;
 }
 
-@media screen and (max-width: 420px) {
-    #logo {
-        font-size: 275%;
-    }
+/* media queries */
 
+/* for screens 420px and smaller */
+@media screen and (max-width: 420px) {
     #tag-line {
         font-size: 85%;
     }
 
     #menu {
-    display: inline-block;
-        margin: 5px 60px 5px 0px;
+        clear: both;
+        float: left;
+        margin: 10px 0 10px 20px;
         line-height: 20px;
-        font-size: 80%;
-        font-weight: 700;
-        text-transform: uppercase;
         letter-spacing: 2px;
     }
 
-    #hero-text {
-        position: absolute;
-        top: 20px;
-        left: 100px;
-    }
-
-    #about-us {
-        margin-bottom: 20px;
-    }
-
-    #about-us div {
-        clear: both;
-        display: block;
-        width: 90%;
-        font-size: 95%;
-    }
-
-    #recipes h2 {
-        display: inline-block;
-
-    }
-
-    .form-section {
-        clear: both;
-        height: 500px;
-    }
-
-    .signup-form {
-        text-align: center;
-        width: 300px;
-        margin: 20px 20px;
-    }
-
-    .request-button  {
-        display: inline-block;
-    }
-
-    #thanks, #fof {
-        clear: both;
-    }
-}
-
-/* For small screens sizes from 320px wide and down */
-@media screen and (max-width: 320px) {
-
-    #logo {
-        font-size: 250%;
-    }
-
-    #tag-line {
-        font-size: 80%;
-    }
-
-    nav {
-        text-align: center;
-    }
-
-    #menu {
-        margin: 5px auto;
-        line-height: 20px;
-        font-size: 80%;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+    #menu li {
+        margin-right: 10px;
     }
 
     #hero-text {
@@ -481,6 +417,10 @@ footer {
         font-size: 95%;
     }
 
+    .flip-card a, .flip-card h4, .flip-card li {
+        font-size: 95%;
+    }
+
     .form-section {
         clear: both;
         height: 500px;
@@ -494,10 +434,16 @@ footer {
 
     .request-button {
         display: inline-block;
+        border: 5px solid #f88657
+    }
+
+    .request-button:hover {
+        border: 5px solid #ffd700;
+        background-color: #f88657;
+
     }
 
     #thanks, #fof {
         clear: both;
     }
 }
-
